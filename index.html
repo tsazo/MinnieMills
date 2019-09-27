@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minnie Mills | 2019-2020</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- Style tag to be moved into seperate doc later -->
+    <style media="screen">
+      * {
+        margin:0;
+        padding:0;
+      }
+
+      body {
+        width:100vw;
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #C6CAED;
+      }
+
+      header {
+        max-width:80%;
+        margin:0px auto;
+        color:#7E5982;
+        font-size:18px;
+      }
+
+      nav {
+        float:left;
+        width:69%;
+        display:flex;
+        justify-content:space-between;
+      }
+
+      nav a, #socialIcons i, .section a {
+        text-decoration:none;
+        color:#7E5982;
+        cursor: pointer;
+        margin:35px 0px;
+        transition:0.3s;
+      }
+
+      #active {
+        color:#8282B7;
+      }
+
+      /* nav a:hover {
+        color:#8282B7;
+        transition:0.3s;
+      } */
+
+      nav a:hover, #socialIcons i:hover, .section a:hover {
+        color:#8282B7;
+        transition:0.3s;
+      }
+
+      #socialIcons {
+        float:right;
+        margin:35px 0px;
+      }
+
+      #socialIcons i {
+        margin:0px 10px;
+      }
+
+      #socialIcons i:hover {
+        font-size:20px;
+      }
+
+      #minnieIntro, .section {
+        width:100vw;
+        height:65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        /* background-color:grey; */
+      }
+
+      #minnieIntro h1, .section h1, .section h3 {
+        font-family: 'Quicksand', sans-serif;
+        color: #F2F4FF;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 70px;
+      }
+
+      #slideshow {
+        font-size: 0;
+        white-space: nowrap;
+      }
+
+      .img {
+        display: inline-block;
+        height: 175px;
+        width: calc(25% - 2px);
+        border: 1px solid darkgrey;
+      }
+
+      .section {
+        border: 1px solid grey;
+        height: 85vh;
+        width:100vw;
+      }
+
+      #section2 {
+        background: url("https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80");
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .line {
+        margin:15px auto;
+        height: 2px;
+        width:400px;
+        background-color: #F2F4FF;
+      }
+
+      .section h3 {
+        font-size: 40px;
+      }
+
+      .section a {
+        color: #F2F4FF;
+        transition: 0.3s;
+      }
+
+      @media only screen and (max-width:900px) {
+        header {
+          max-width:85%;
+        }
+
+        nav {
+          float:left;
+          width:80%;
+          display:flex;
+          justify-content:space-between;
+        }
+      }
+
+
+      @media only screen and (max-width:700px) {
+        /* For mobile phones: */
+        header {
+          text-align:center;
+        }
+
+        nav {
+          width:100%;
+          float:none;
+          margin:auto;
+          display:inline-grid;
+          justify-content:initial;
+        }
+
+        nav a, #socialIcons {
+          margin:15px 0px;
+          width:100%;
+        }
+
+        #socialIcons {
+          float:none;
+        }
+      }
+
+      @media only screen and (max-height:400px) {
+        #minnieIntro{
+          height: 300px;
+        }
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/b824d885b5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a id="active" href="index.html">HOME</a>
+        <a href="#aboutMe">ABOUT ME</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#management">MANAGEMENT</a>
+        <a href="#contact">CONTACT ME</a>
+      </nav>
+      <div id="socialIcons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </header>
+
+    <div id="minnieIntro">
+      <h1>MINNIE</h1>
+      <h1>MILLS</h1>
+    </div>
+
+    <div id="slideshow">
+      <div class="img" id="img1"></div>
+      <div class="img" id="img2"></div>
+      <div class="img" id="img3"></div>
+      <div class="img" id="img4"></div>
+    </div>
+
+    <div class="section" id="section1">
+      <h1>ABOUT ME</h1>
+      <div class="line"></div>
+      <h3><a href="#aboutMe">READ MY STORY</a></h3>
+    </div>
+
+    <div class="section" id="section2">
+      <h1>CONNECT</h1>
+      <h1>WITH ME</h1>
+      <div class="line"></div>
+      <h3><a href="#contact">GET IN TOUCH</a></h3>
+    </div>
+
+  </body>
+</html>
