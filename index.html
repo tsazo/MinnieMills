@@ -68,7 +68,7 @@
         font-size:20px;
       }
 
-      #minnieIntro, .indexSection {
+      #minnieIntro, .indexSection, footer {
         width:100vw;
         height:65vh;
         display: flex;
@@ -105,7 +105,7 @@
       }
 
       #indexSection2 {
-        background: url("https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80") white fixed center no-repeat;
+        background: url("https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80") fixed center no-repeat;
         background-size: cover;
       }
 
@@ -123,6 +123,15 @@
       .indexSection a {
         color: #F2F4FF;
         transition: 0.3s;
+      }
+
+      footer {
+        height: 100px;
+        color:#7E5982;
+      }
+
+      footer p {
+        margin: 0px 10px;
       }
 
       @media only screen and (max-width:900px) {
@@ -161,12 +170,12 @@
           float:none;
         }
 
-        #indexSection2 {
-          background-size: auto;
-        }
+        /* #indexSection2 {
+          background-size: fix;
+        } */
       }
 
-      @media only screen and (max-width:375px) {
+      @media only screen and (max-width:411px) {
         /* For mobile phones: */
         #minnieIntro h1, .indexSection h1 {
           font-size: 55px;
@@ -233,6 +242,10 @@
       <div class="line"></div>
       <h3><a href="#contact">GET IN TOUCH</a></h3>
     </div>
+
+    <footer>
+      <p>&copy; Copyright 2019 Celine Minnie Mills | Created by Trinity Sazo | github.com/tsazo</p>
+    </footer>
 
   </body>
 </html>
