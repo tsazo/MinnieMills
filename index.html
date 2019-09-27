@@ -33,7 +33,7 @@
         justify-content:space-between;
       }
 
-      nav a, #socialIcons i, .section a {
+      nav a, #socialIcons i, .indexSection a {
         text-decoration:none;
         color:#7E5982;
         cursor: pointer;
@@ -50,7 +50,7 @@
         transition:0.3s;
       } */
 
-      nav a:hover, #socialIcons i:hover, .section a:hover {
+      nav a:hover, #socialIcons i:hover, .indexSection a:hover {
         color:#8282B7;
         transition:0.3s;
       }
@@ -68,7 +68,7 @@
         font-size:20px;
       }
 
-      #minnieIntro, .section {
+      #minnieIntro, .indexSection {
         width:100vw;
         height:65vh;
         display: flex;
@@ -78,7 +78,7 @@
         /* background-color:grey; */
       }
 
-      #minnieIntro h1, .section h1, .section h3 {
+      #minnieIntro h1, .indexSection h1, .indexSection h3 {
         font-family: 'Quicksand', sans-serif;
         color: #F2F4FF;
         font-weight: normal;
@@ -98,13 +98,13 @@
         border: 1px solid darkgrey;
       }
 
-      .section {
+      .indexSection {
         border: 1px solid grey;
         height: 85vh;
         width:100vw;
       }
 
-      #section2 {
+      #indexSection2 {
         background: url("https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80") white fixed center no-repeat;
         background-size: cover;
       }
@@ -116,11 +116,11 @@
         background-color: #F2F4FF;
       }
 
-      .section h3 {
+      .indexSection h3 {
         font-size: 40px;
       }
 
-      .section a {
+      .indexSection a {
         color: #F2F4FF;
         transition: 0.3s;
       }
@@ -140,7 +140,6 @@
 
 
       @media only screen and (max-width:700px) {
-        /* For mobile phones: */
         header {
           text-align:center;
         }
@@ -161,15 +160,19 @@
         #socialIcons {
           float:none;
         }
+
+        #indexSection2 {
+          background-size: auto;
+        }
       }
 
       @media only screen and (max-width:375px) {
         /* For mobile phones: */
-        #minnieIntro h1, .section h1 {
+        #minnieIntro h1, .indexSection h1 {
           font-size: 55px;
         }
 
-        .section h3 {
+        .indexSection h3 {
           font-size: 30px;
         }
 
@@ -202,11 +205,13 @@
       </div>
     </header>
 
+    <!-- Minnie's name, first section in website -->
     <div id="minnieIntro">
       <h1>MINNIE</h1>
       <h1>MILLS</h1>
     </div>
 
+    <!-- Image slideshow - to get working only if I have time -->
     <div id="slideshow">
       <div class="img" id="img1"></div>
       <div class="img" id="img2"></div>
@@ -214,13 +219,15 @@
       <div class="img" id="img4"></div>
     </div>
 
-    <div class="section" id="section1">
+    <!-- About me section -->
+    <div class="indexSection" id="indexSection1">
       <h1>ABOUT ME</h1>
       <div class="line"></div>
       <h3><a href="#aboutMe">READ MY STORY</a></h3>
     </div>
 
-    <div class="section" id="section2">
+    <!-- Contact section -->
+    <div class="indexSection" id="indexSection2">
       <h1>CONNECT</h1>
       <h1>WITH ME</h1>
       <div class="line"></div>
