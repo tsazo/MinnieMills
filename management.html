@@ -50,7 +50,7 @@
         transition:0.3s;
       } */
 
-      nav a:hover, #socialIcons i:hover, .indexSection a:hover {
+      nav a:hover, #socialIcons i:hover {
         color:#8282B7;
         transition:0.3s;
       }
@@ -68,7 +68,7 @@
         font-size:20px;
       }
 
-      #minnieIntro, .indexSection, footer {
+      footer {
         width:100vw;
         height:65vh;
         display: flex;
@@ -76,53 +76,6 @@
         justify-content: center;
         text-align: center;
         /* background-color:grey; */
-      }
-
-      #minnieIntro h1, .indexSection h1, .indexSection h3 {
-        font-family: 'Quicksand', sans-serif;
-        color: #F2F4FF;
-        font-weight: normal;
-        letter-spacing: 5px;
-        font-size: 70px;
-      }
-
-      #slideshow {
-        font-size: 0;
-        white-space: nowrap;
-      }
-
-      .img {
-        display: inline-block;
-        height: 175px;
-        width: calc(25% - 2px);
-        border: 1px solid darkgrey;
-      }
-
-      .indexSection {
-        border: 1px solid grey;
-        height: 85vh;
-        width:100vw;
-      }
-
-      #indexSection2 {
-        background: url("https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80") fixed center no-repeat;
-        background-size: cover;
-      }
-
-      .line {
-        margin:15px auto;
-        height: 2px;
-        width:400px;
-        background-color: #F2F4FF;
-      }
-
-      .indexSection h3 {
-        font-size: 40px;
-      }
-
-      .indexSection a {
-        color: #F2F4FF;
-        transition: 0.3s;
       }
 
       footer {
@@ -214,10 +167,10 @@
     <!-- Header -->
     <header>
       <nav>
-        <a id="active" href="index.html">HOME</a>
+        <a href="index.html">HOME</a>
         <a href="about.html">ABOUT ME</a>
         <a href="portfolio.html">PORTFOLIO</a>
-        <a href="management.html">MANAGEMENT</a>
+        <a id="active" href="management.html">MANAGEMENT</a>
         <a href="contact.html">CONTACT ME</a>
       </nav>
       <div id="socialIcons">
@@ -226,34 +179,6 @@
       </div>
     </header>
 
-    <!-- Minnie's name, first section in website -->
-    <div id="minnieIntro">
-      <h1>MINNIE</h1>
-      <h1>MILLS</h1>
-    </div>
-
-    <!-- Image slideshow - to get working only if I have time -->
-    <div id="slideshow">
-      <div class="img" id="img1"></div>
-      <div class="img" id="img2"></div>
-      <div class="img" id="img3"></div>
-      <div class="img" id="img4"></div>
-    </div>
-
-    <!-- About me section -->
-    <div class="indexSection" id="indexSection1">
-      <h1>ABOUT ME</h1>
-      <div class="line"></div>
-      <h3><a href="#aboutMe">READ MY STORY</a></h3>
-    </div>
-
-    <!-- Contact section -->
-    <div class="indexSection" id="indexSection2">
-      <h1>CONNECT</h1>
-      <h1>WITH ME</h1>
-      <div class="line"></div>
-      <h3><a href="#contact">GET IN TOUCH</a></h3>
-    </div>
 
     <footer>
       <p>&copy; Copyright 2019 Celine Minnie Mills | Created by Trinity Sazo | github.com/tsazo</p>
