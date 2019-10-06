@@ -86,22 +86,48 @@
         font-size: 70px;
       }
 
-      #slideshow {
+      #imageContainer {
         font-size: 0;
         white-space: nowrap;
       }
 
       .img {
+        margin:0 0 150px 0;
         display: inline-block;
         height: 175px;
-        width: calc(25% - 2px);
-        border: 1px solid darkgrey;
+        width: calc(25%);
+      }
+
+
+      #img1 {
+        background: url("photos/Actingprofile4.jpg") center no-repeat;
+        background-size: cover;
+      }
+
+      #img2 {
+        background: url("photos/Actingprofile2.jpg") center no-repeat;
+        background-size: cover;
+      }
+
+      #img3 {
+        background: url("photos/Actingprofile5.jpg") center no-repeat;
+        background-size: cover;
+      }
+
+      #img4 {
+        background: url("photos/Actingprofile3.jpg") center no-repeat;
+        background-size: cover;
       }
 
       .indexSection {
         border: 1px solid grey;
         height: 85vh;
         width:100vw;
+      }
+
+      #indexSection1 {
+        background: url("photos/Nike5.jpg") fixed center no-repeat;
+        background-size: cover;
       }
 
       #indexSection2 {
@@ -174,9 +200,23 @@
           background-position: center;
           background-attachment: scroll;
         }
+
       }
 
-      @media only screen and (max-width:411px) {
+      @media only screen and (max-width:600px) {
+        .img {
+          display: block;
+          height: 300px;
+          width: 100vw;
+          margin: 0px;
+        }
+
+        #img4 {
+          margin-bottom: 150px;
+        }
+      }
+
+      @media only screen and (max-width:430px) {
         /* For mobile phones: */
         #minnieIntro h1, .indexSection h1 {
           font-size: 55px;
@@ -190,20 +230,15 @@
           width:300px;
         }
 
-        #slideshow {
-
-        }
-
-        .img {
+        /* .img {
           display: block;
           height: 250px;
           width: 100vw;
-          border: 1px solid darkgrey;
-        }
+        } */
       }
 
       @media only screen and (max-height:400px) {
-        #minnieIntro{
+        #minnieIntro {
           height: 300px;
         }
       }
@@ -221,8 +256,8 @@
         <a href="contact.html">CONTACT ME</a>
       </nav>
       <div id="socialIcons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/minnie.mills/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </header>
 
@@ -233,7 +268,7 @@
     </div>
 
     <!-- Image slideshow - to get working only if I have time -->
-    <div id="slideshow">
+    <div id="imageContainer">
       <div class="img" id="img1"></div>
       <div class="img" id="img2"></div>
       <div class="img" id="img3"></div>

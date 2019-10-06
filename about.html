@@ -22,6 +22,7 @@
       header {
         max-width:80%;
         margin:0px auto;
+        display: flow-root;
         color:#7E5982;
         font-size:18px;
       }
@@ -66,6 +67,28 @@
 
       #socialIcons i:hover {
         font-size:20px;
+      }
+
+      #beginning {
+        margin:100px auto;
+        width:83%;
+        display:flow-root;
+      }
+
+      .aboutImg {
+        height:400px;
+        width:400px;
+        border: 1px solid darkgrey;
+        border-radius:100%;
+      }
+
+      #youngMinnie {
+        float:left;
+        margin:0px 25px 10px 0px;
+      }
+
+      p {
+        margin:10px 0px;
       }
 
       footer {
@@ -123,43 +146,33 @@
           float:none;
         }
 
-        #indexSection2 {
-          background-position: center;
-          background-attachment: scroll;
+        .aboutImg {
+          width:100%;
+          border-radius:0px;
         }
+
+        #youngMinnie {
+          margin-left: 0px;
+        }
+
       }
 
       @media only screen and (max-width:411px) {
         /* For mobile phones: */
-        #minnieIntro h1, .indexSection h1 {
-          font-size: 55px;
+        #beginning {
+          margin:50px 0px;
         }
 
-        .indexSection h3 {
-          font-size: 30px;
-        }
-
-        .line {
-          width:300px;
-        }
-
-        #slideshow {
-
-        }
-
-        .img {
-          display: block;
-          height: 250px;
-          width: 100vw;
-          border: 1px solid darkgrey;
+        .aboutImg {
+          width:100vw;
+          height:300px;
         }
       }
 
       @media only screen and (max-height:400px) {
-        #minnieIntro{
-          height: 300px;
-        }
+
       }
+
     </style>
     <script src="https://kit.fontawesome.com/b824d885b5.js" crossorigin="anonymous"></script>
   </head>
@@ -174,11 +187,19 @@
         <a href="contact.html">CONTACT ME</a>
       </nav>
       <div id="socialIcons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/minnie.mills/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </header>
 
+    <!-- Beginning -->
+    <div id="beginning">
+      <div class="aboutImg" id="youngMinnie"></div>
+      <div>
+        <p>I was born in London, England on January 22, 2002 to a Canadian father from Calgary and a Korean mother from Seoul. They introduced me to the beauty of the hard work and an open mind. I moved around a lot growing up and I got to live in many different cities all over the world (London, Montreal, Washington DC, New York, and Carmel California). This upbringing gave me a deep appreciation for different people, environments, and cultures.</p>
+        <p>People can be nervous and feeling uncomfortable to things that are foreign, but that’s what it makes life more interesting and full. I’m different, but being different can be beautiful if you allow it.</p>
+      </div>
+    </div>
 
     <footer>
       <p>&copy; Copyright 2019 Celine Minnie Mills | Created by Trinity Sazo | github.com/tsazo</p>
